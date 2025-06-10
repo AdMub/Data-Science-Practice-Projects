@@ -1,0 +1,31 @@
+1. We will collect the Stock Data (e.g AAPL dataset)
+2. Preprocess the Data i.e Trainning and Test
+3. Create an Stacked LSTM model
+4. Predict the test data and plot the output
+5. Predict the future 30 days and plot the output
+
+
+We have time series
+120,130,140,125,134,150,190,||||189,154, 167
+
+Cross validation, Random seed (They work well with linear regression, classification problem etc.)
+
+but incase of timeseries data
+Timeseries data ----> next data depends on previous data 
+lets says we have 70% split
+Timeseries data ----> Train -- 120,130,140,125,134,150,190  Test -- 189,154, 167
+
+120,130,140,125,134,150,190       189,154, 167, 200, 231
+
+Timesteps = 3
+
+	X_train		y_train                 	  y_train		y_test
+f1	f2	f3	o/p                           f1	f2	f3	o/p
+120	130	140	125			     189	154	167	200
+130	125	134	150			     154	167	200	231
+
+
+
+f1------------------------- f100
+130 136-------------------------- 131   140
+136 ------------------------------140
