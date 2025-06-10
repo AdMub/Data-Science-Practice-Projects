@@ -1,0 +1,17 @@
+1. Sentences
+2. One hot Representation -- index from the dictionary
+3. onehot Repres---> Embedding Layers Keras to form Embedding matrix
+4. Embedding Matrix   Vocab_size = 10000, dimension = 15
+
+
+
+e.g word of 2000 converted to dimension of 15 vectors
+
+
+	man woman child king   queen
+gender	-1    1	    0    -0.92  093
+royal
+fruit
+good 
+bad
+f = 5
