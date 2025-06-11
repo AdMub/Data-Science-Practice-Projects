@@ -1,0 +1,9 @@
+Problems of Encoder and Decoder
+1. Encoder and Decoder usually don't perform well with LOnger sentences
+2. Researchers experimented and found out lowe Bleu Score
+
+
+Solution
+Like Human Translator
+
+1. Translating words in sentences using Bidirectional LSTM RNN
