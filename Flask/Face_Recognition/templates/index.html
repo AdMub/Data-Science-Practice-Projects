@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Stream with Snapshot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Live Camera Streaming</h1>
+    
+    <div class="video-container">
+        <!-- This <img> tag loads the video feed by calling the Flask '/video' route -->
+        <img id="videoFeed" src="{{ url_for('video') }}" width="640" height="480" />
+        <p id="timestamp"></p>
+    </div>
+
+    <button onclick="takeSnapshot()">Capture Snapshot (Client-side)</button>
+
+    <h3>Snapshot Preview</h3>
+    <canvas id="snapshotCanvas"></canvas>
+    <a id="downloadLink" href="#" download="snapshot.jpg">Download Snapshot</a>
+
+    <form action="/snapshot">
+        <button type="submit" class="btn">Take Snapshot (Server-side)</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>
