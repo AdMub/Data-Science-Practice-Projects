@@ -1,0 +1,19 @@
+Flask
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+flasgger
+streamlit
+
+
+# In browser URl add apidocs to the local host "http://127.0.0.1:5000/apidocs/"
+
+## Run docker "docker run -p 8000:8000 money_api" or "http://localhost:9000/apidocs/
+"
