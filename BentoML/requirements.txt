@@ -1,0 +1,21 @@
+bentoml == 1.0.25
+scikit-learn
+pandas
+
+
+
+
+
+
+# Create Environment with this "conda create -p venv python -y"
+# Activate environment "conda activate venv/"
+# Install necessary requirements "pip install -r requirements.txt"
+# Run the file "python train.py" and keep the tag "Model(tag="iris_clf:ifhkak3xbwbqebhn")"
+# List of the model "bentoml models list"
+# Run the file "python test.py"
+# Run the service file "bentoml serve service.py:svc --reload"
+# Buiding to bentoml package "bentoml build"
+# List of B"bentoml list"
+
+
+# Bento(tag="iris_classifier:womvfvlxxshfgbhn")
